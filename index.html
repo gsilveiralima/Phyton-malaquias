@@ -1,122 +1,391 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução ao Python - Curso Completo</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            background-color: #f4f4f4;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        pre {
-            background: #222;
-            color: #0f0;
-            padding: 10px;
-            border-radius: 5px;
-            overflow-x: auto;
-        }
-        code {
-            font-family: "Courier New", Courier, monospace;
-            font-size: 14px;
-            color: #d63384;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-        }
-        .signature {
-            margin-top: 30px;
-            padding: 15px;
-            background: #222;
-            color: #fff;
-            text-align: center;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso Completo de Python: Do Básico ao Avançado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 20px;
+      background-color: #f4f4f4;
+    }
+    .container {
+      max-width: 960px;
+      margin: auto;
+      background: #fff;
+      padding: 20px 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #333;
+      margin-top: 1.2em;
+    }
+    pre {
+      background: #222;
+      color: #0f0;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 14px;
+      color: #d63384;
+    }
+    a {
+      color: #0077cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .signature {
+      margin-top: 40px;
+      padding: 15px;
+      background: #222;
+      color: #fff;
+      text-align: center;
+      border-radius: 8px;
+      font-size: 0.9em;
+    }
+    details {
+      margin: 0.8em 0;
+      background: #e7e7e7;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .toc ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .toc li {
+      margin-bottom: 5px;
+    }
+    .toc a {
+      color: #0077cc;
+    }
+  </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Introdução ao Python - Curso Completo</h1>
+  <h1>Curso Completo de Python: Do Básico ao Avançado</h1>
+  <p>Bem-vindo a este curso interativo de Python. Aqui você encontrará desde os conceitos fundamentais até tópicos avançados, com exemplos práticos, exercícios interativos e explicações detalhadas para facilitar seu aprendizado.</p>
 
-    <h2>📌 O que é Python?</h2>
-    <p>Python é uma linguagem de programação de alto nível, interpretada e orientada a objetos. Foi criada no final dos anos 1980 e é amplamente usada em diversas áreas, incluindo desenvolvimento web, ciência de dados, automação, inteligência artificial e cibersegurança.</p>
+  <section class="toc">
+    <h2>Índice</h2>
+    <ul>
+      <li><a href="#introducao">1. Introdução ao Python</a></li>
+      <li><a href="#instalacao">2. Instalação e Ambiente</a></li>
+      <li><a href="#basico">3. Conceitos Básicos</a></li>
+      <li><a href="#controle">4. Estruturas de Controle</a></li>
+      <li><a href="#funcoes">5. Funções</a></li>
+      <li><a href="#estruturas">6. Estruturas de Dados</a></li>
+      <li><a href="#modulos">7. Módulos e Pacotes</a></li>
+      <li><a href="#oop">8. Programação Orientada a Objetos</a></li>
+      <li><a href="#avancado">9. Tópicos Avançados</a></li>
+      <li><a href="#exercicios">10. Exercícios Interativos e Desafios</a></li>
+    </ul>
+  </section>
 
-    <h2>📌 Instalação do Python</h2>
-    <h3>Windows</h3>
+  <!-- 1. Introdução -->
+  <section id="introducao">
+    <h2>1. Introdução ao Python</h2>
+    <p>Python é uma linguagem de programação de alto nível, criada por Guido van Rossum e lançada em 1991. Sua sintaxe clara e legível a torna ideal tanto para iniciantes quanto para profissionais. É amplamente utilizada em diversas áreas: desenvolvimento web, ciência de dados, automação, inteligência artificial, cibersegurança e muito mais.</p>
+    
+    <details>
+      <summary>Curiosidades e Vantagens do Python</summary>
+      <ul>
+        <li><strong>Simplicidade:</strong> A sintaxe se aproxima do pseudocódigo, facilitando o aprendizado.</li>
+        <li><strong>Versatilidade:</strong> Amplamente utilizada em diversos domínios, desde scripts simples até aplicações complexas.</li>
+        <li><strong>Comunidade Ativa:</strong> Milhares de bibliotecas e uma vasta comunidade ajudam na resolução de problemas.</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- 2. Instalação e Ambiente -->
+  <section id="instalacao">
+    <h2>2. Instalação e Ambiente</h2>
+    <p>A seguir, veja como instalar e configurar seu ambiente para desenvolver em Python.</p>
+    
+    <h3>2.1. Windows</h3>
     <ol>
-        <li>Acesse o site oficial: <a href="https://www.python.org/downloads/" target="_blank">Python.org</a>.</li>
-        <li>Baixe o instalador e execute-o.</li>
-        <li>Marque a opção <strong>"Add Python to PATH"</strong> antes de instalar.</li>
-        <li>Após a instalação, abra o prompt de comando e digite:
-            <pre><code>python --version</code></pre>
-        </li>
+      <li>Acesse o site oficial: <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a>.</li>
+      <li>Baixe o instalador (versão 3.x) e execute-o.</li>
+      <li>Marque a opção <strong>"Add Python to PATH"</strong> antes de instalar.</li>
+      <li>Para verificar, abra o Prompt de Comando e digite:
+        <pre><code>python --version</code></pre>
+      </li>
     </ol>
 
-    <h3>Linux/macOS</h3>
-    <p>No terminal, digite:</p>
+    <h3>2.2. Linux/macOS</h3>
+    <p>No terminal, execute:</p>
     <pre><code>sudo apt install python3</code></pre>
-    <p>Para verificar a instalação:</p>
+    <p>Verifique a instalação com:</p>
     <pre><code>python3 --version</code></pre>
 
-    <h2>📌 Primeiros Comandos</h2>
-    <p>Após instalar Python, podemos rodar o interpretador interativo:</p>
-    <pre><code>python</code></pre>
-    <p>Agora, tente os seguintes comandos:</p>
-    <pre><code>print("Olá, Mundo!")</code></pre>
+    <h3>2.3. Escolhendo um Editor/IDE</h3>
+    <p>Recomendamos utilizar editores como <strong>VS Code</strong>, <strong>PyCharm</strong> ou <strong>Jupyter Notebook</strong> para uma experiência de desenvolvimento mais rica.</p>
+  </section>
 
-    <h2>📌 Variáveis e Tipos de Dados</h2>
-    <p>Python permite criar variáveis sem declarar tipos. Exemplos:</p>
-    <pre><code>idade = 25  # Inteiro
-altura = 1.75  # Float
-nome = "Alice"  # String
-ativo = True  # Booleano</code></pre>
+  <!-- 3. Conceitos Básicos -->
+  <section id="basico">
+    <h2>3. Conceitos Básicos</h2>
+    <p>Nesta seção, você aprenderá sobre variáveis, tipos de dados, entrada/saída e operadores.</p>
 
-    <h2>📌 Entrada e Saída de Dados</h2>
-    <p>Podemos capturar entrada do usuário com <code>input()</code> e exibir com <code>print()</code>:</p>
-    <pre><code>nome = input("Digite seu nome: ")
-print("Bem-vindo,", nome)</code></pre>
+    <h3>3.1. Variáveis e Tipos de Dados</h3>
+    <p>Em Python, não é necessário declarar o tipo da variável; ele é inferido automaticamente.</p>
+    <pre><code>idade = 25          # Inteiro
+altura = 1.75         # Float
+nome = "Alice"        # String
+ativo = True          # Booleano</code></pre>
 
-    <h2>📌 Operadores Matemáticos</h2>
+    <details>
+      <summary>Exemplo Interativo: Exibindo Variáveis</summary>
+      <p>Experimente copiar e executar o seguinte código em seu interpretador Python:</p>
+      <pre><code>nome = input("Digite seu nome: ")
+print("Olá,", nome)
+</code></pre>
+    </details>
+
+    <h3>3.2. Entrada e Saída</h3>
+    <p>Utilize <code>input()</code> para ler dados e <code>print()</code> para exibi-los.</p>
+    <pre><code>numero = int(input("Digite um número: "))
+print("Você digitou:", numero)</code></pre>
+
+    <h3>3.3. Operadores</h3>
     <ul>
-        <li>Adição: <code>+</code></li>
-        <li>Subtração: <code>-</code></li>
-        <li>Multiplicação: <code>*</code></li>
-        <li>Divisão: <code>/</code></li>
-        <li>Exponenciação: <code>**</code></li>
-        <li>Módulo (resto): <code>%</code></li>
+      <li><strong>Aritméticos:</strong> +, -, *, /, //, %, **</li>
+      <li><strong>Comparação:</strong> ==, !=, &gt;, &lt;, &gt;=, &lt;=</li>
+      <li><strong>Lógicos:</strong> and, or, not</li>
     </ul>
     <pre><code>a = 10
 b = 3
-print(a + b)  # 13
-print(a ** b)  # 1000</code></pre>
+print(a + b)      # Soma: 13
+print(a ** b)     # Exponenciação: 1000</code></pre>
+  </section>
 
-    <h2>📌 Exercícios</h2>
-    <p>Pratique com os exercícios abaixo:</p>
+  <!-- 4. Estruturas de Controle -->
+  <section id="controle">
+    <h2>4. Estruturas de Controle</h2>
+    <p>As estruturas de controle permitem direcionar o fluxo do programa.</p>
+
+    <h3>4.1. Condicionais (if, elif, else)</h3>
+    <pre><code>idade = int(input("Digite sua idade: "))
+if idade >= 18:
+    print("Maior de idade")
+else:
+    print("Menor de idade")</code></pre>
+
+    <h3>4.2. Laços de Repetição</h3>
+    <p>Os laços <code>for</code> e <code>while</code> são usados para repetir ações.</p>
+    <pre><code># Exemplo com for:
+for i in range(5):
+    print("Número", i)
+
+# Exemplo com while:
+contador = 0
+while contador < 5:
+    print("Contador:", contador)
+    contador += 1</code></pre>
+
+    <details>
+      <summary>Quiz Interativo</summary>
+      <p>Qual dos seguintes códigos imprime os números de 0 a 4?</p>
+      <p><em>Escolha a alternativa correta:</em></p>
+      <ol>
+        <li>A: <code>for i in range(1,5): print(i)</code></li>
+        <li>B: <code>for i in range(5): print(i)</code></li>
+        <li>C: <code>while i < 5: print(i)</code></li>
+      </ol>
+      <p><strong>Resposta:</strong> Alternativa B</p>
+    </details>
+  </section>
+
+  <!-- 5. Funções -->
+  <section id="funcoes">
+    <h2>5. Funções</h2>
+    <p>Funções são blocos de código reutilizáveis. Elas podem receber parâmetros e retornar valores.</p>
+    <pre><code>def saudacao(nome):
+    return "Olá, " + nome + "!"
+
+print(saudacao("Alice"))</code></pre>
+
+    <details>
+      <summary>Exercício Prático</summary>
+      <p>Crie uma função chamada <code>calcular_area</code> que receba a largura e a altura de um retângulo e retorne sua área. Teste a função imprimindo o resultado.</p>
+    </details>
+  </section>
+
+  <!-- 6. Estruturas de Dados -->
+  <section id="estruturas">
+    <h2>6. Estruturas de Dados</h2>
+    <p>Python possui diversas estruturas de dados poderosas para armazenar e manipular informações.</p>
+    
+    <h3>6.1. Listas</h3>
+    <pre><code>frutas = ["maçã", "banana", "laranja"]
+print(frutas[0])    # Imprime "maçã"
+frutas.append("uva")
+print(frutas)</code></pre>
+
+    <h3>6.2. Tuplas</h3>
+    <pre><code>cores = ("vermelho", "verde", "azul")
+print(cores[1])    # Imprime "verde"</code></pre>
+
+    <h3>6.3. Dicionários</h3>
+    <pre><code>pessoa = {"nome": "Alice", "idade": 30}
+print(pessoa["nome"])</code></pre>
+
+    <h3>6.4. Conjuntos</h3>
+    <pre><code>numeros = {1, 2, 3, 3, 2}
+print(numeros)  # Conjuntos não repetem valores</code></pre>
+  </section>
+
+  <!-- 7. Módulos e Pacotes -->
+  <section id="modulos">
+    <h2>7. Módulos e Pacotes</h2>
+    <p>Para organizar seu código e reutilizá-lo, Python permite que você divida seu programa em módulos e pacotes.</p>
+    <pre><code># Exemplo de importação de módulo
+import math
+print(math.sqrt(16))  # Imprime 4.0</code></pre>
+
+    <details>
+      <summary>Exercício</summary>
+      <p>Crie um módulo chamado <code>meu_modulo.py</code> com uma função <code>somar(a, b)</code> que retorne a soma de dois números. Em seguida, importe este módulo em outro arquivo e utilize a função.</p>
+    </details>
+  </section>
+
+  <!-- 8. Programação Orientada a Objetos -->
+  <section id="oop">
+    <h2>8. Programação Orientada a Objetos</h2>
+    <p>A POO permite organizar programas por meio de classes e objetos. Veja um exemplo básico:</p>
+    <pre><code>class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+
+    def apresentar(self):
+        return f"Olá, meu nome é {self.nome} e tenho {self.idade} anos."
+
+p = Pessoa("Alice", 30)
+print(p.apresentar())</code></pre>
+
+    <details>
+      <summary>Conceitos Importantes</summary>
+      <ul>
+        <li><strong>Encapsulamento:</strong> Protege os dados dos objetos.</li>
+        <li><strong>Herança:</strong> Permite criar classes derivadas com funcionalidades extras.</li>
+        <li><strong>Polimorfismo:</strong> Permite que métodos com o mesmo nome se comportem de maneira diferente em classes distintas.</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- 9. Tópicos Avançados -->
+  <section id="avancado">
+    <h2>9. Tópicos Avançados</h2>
+    <p>Nesta seção, abordamos conceitos mais avançados para quem deseja se aprofundar na linguagem.</p>
+
+    <h3>9.1. Decorators</h3>
+    <p>Decorators são funções que modificam o comportamento de outras funções sem alterá-las diretamente.</p>
+    <pre><code>def meu_decorator(func):
+    def wrapper(*args, **kwargs):
+        print("Executando antes da função")
+        resultado = func(*args, **kwargs)
+        print("Executando depois da função")
+        return resultado
+    return wrapper
+
+@meu_decorator
+def dizer_oi():
+    print("Oi!")
+
+dizer_oi()</code></pre>
+
+    <h3>9.2. Geradores</h3>
+    <p>Geradores permitem criar iteradores de forma simples e econômica em termos de memória.</p>
+    <pre><code>def contador(max):
+    n = 0
+    while n < max:
+        yield n
+        n += 1
+
+for numero in contador(5):
+    print(numero)</code></pre>
+
+    <h3>9.3. Context Managers</h3>
+    <p>Context managers (gerenciadores de contexto) são usados para gerenciar recursos, como arquivos, garantindo que sejam fechados corretamente.</p>
+    <pre><code>with open("arquivo.txt", "r") as arquivo:
+    conteudo = arquivo.read()
+    print(conteudo)</code></pre>
+  </section>
+
+  <!-- 10. Exercícios Interativos e Desafios -->
+  <section id="exercicios">
+    <h2>10. Exercícios Interativos e Desafios</h2>
+    <p>Coloque em prática o que você aprendeu resolvendo os exercícios abaixo:</p>
     <ol>
-        <li>Crie um programa que exiba "Olá, Mundo!".</li>
-        <li>Peça o nome do usuário e exiba uma saudação.</li>
-        <li>Peça dois números e mostre a soma deles.</li>
-        <li>Converta uma temperatura de Celsius para Fahrenheit.</li>
+      <li>
+        <strong>Olá, Mundo!</strong> – Crie um programa que exiba "Olá, Mundo!" na tela.
+        <details>
+          <summary>Mostrar Solução</summary>
+          <pre><code>print("Olá, Mundo!")</code></pre>
+        </details>
+      </li>
+      <li>
+        <strong>Saudação Personalizada</strong> – Peça o nome do usuário e exiba uma saudação.
+        <details>
+          <summary>Mostrar Solução</summary>
+          <pre><code>nome = input("Digite seu nome: ")
+print("Olá,", nome)</code></pre>
+        </details>
+      </li>
+      <li>
+        <strong>Soma de Dois Números</strong> – Leia dois números e exiba a soma.
+        <details>
+          <summary>Mostrar Solução</summary>
+          <pre><code>num1 = int(input("Digite o primeiro número: "))
+num2 = int(input("Digite o segundo número: "))
+print("Soma =", num1 + num2)</code></pre>
+        </details>
+      </li>
+      <li>
+        <strong>Conversão de Temperatura</strong> – Converta uma temperatura de Celsius para Fahrenheit.
+        <details>
+          <summary>Mostrar Solução</summary>
+          <pre><code>celsius = float(input("Temperatura em °C: "))
+fahrenheit = celsius * 9/5 + 32
+print(f"{celsius} °C = {fahrenheit} °F")</code></pre>
+        </details>
+      </li>
+      <li>
+        <strong>Desafio Avançado:</strong> Crie uma função que, dado um número, retorne seu antecessor, número e sucessor em forma de tupla.
+        <details>
+          <summary>Mostrar Solução</summary>
+          <pre><code>def sequencia(num):
+    return (num - 1, num, num + 1)
+
+numero = int(input("Digite um número: "))
+print(sequencia(numero))</code></pre>
+        </details>
+      </li>
     </ol>
+    <p>Para testar seus códigos, você pode utilizar editores online como o <a href="https://repl.it/languages/python3" target="_blank">Repl.it</a> ou o <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank">Programiz Online Compiler</a>.</p>
+  </section>
 
-    <p>Bom estudo e prática! 🚀</p>
-</div>
-
-<div class="signature">
+  <div class="signature">
     <p><strong>📢 Material produzido por:</strong></p>
     <p>👮‍♂️ CB PM SILVEIRA | Especialista em Segurança Pública &amp; Cibersegurança</p>
     <p>🔍 Desenvolvimento de Software e Inteligência Policial</p>
     <p>📚 Parte do projeto <strong>Biblioteca Interativa de Estudos</strong></p>
     <p>🔗 <a href="https://github.com/" target="_blank" style="color: #fff;">Nosso GitHub</a> | 📧 <a href="mailto:contato@email.com" style="color: #fff;">Contato</a></p>
+  </div>
 </div>
 
 </body>
